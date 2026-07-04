@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joinful Library</title>
+</head>
+<body>
+    <header>
+        <h1>Joinful Library</h1>
+        <button id="add-book">+</button>
+    </header>
+    <div id="menu">
+        <div>
+            <label for="title">Title</label><br>
+            <input type="text" maxlength="100" id="title"><br>
+            <label for="author" >Author</label><br>
+            <input type="text" maxlength="100" id="author"><br>
+            <label for="pages">Pages</label><br>
+            <input type="number" id="pages" min="1"><br>
+            <label for="status">Have you read it?</label><br>
+            <input class="checkbox-btn" type="checkbox" id="status"><br>
+            <p id="info-error">You need to provide full info about the book!</p>
+            <button id="submit-btn" type="submit">Done</button>
+        </div>
+    </div>
+    <main id="books-container"></main>
+    <script src="script.js"></script>
+</body>
+</html>
